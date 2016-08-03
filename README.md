@@ -8,4 +8,4 @@ Products on the page are the point of reference for the navigation. You can navi
 Please note this is not a plugin. This is only a showcase.
 <br/>
 <br/>
-<img style="width:35%" src="external-page-in-modal-view.gif"/>
+<img style="width:35%" src="http://szczepan.me/extras/external-page-in-modal-view.gif"/>
