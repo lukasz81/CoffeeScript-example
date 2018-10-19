@@ -1,9 +1,9 @@
-window.showWishPageExternal = (popup) ->
+showWishPageExternal = (popup) ->
   viewButton()
   if popup
     getWishCreatorandShop()
 
-window.lastClickedId = []
+lastClickedId = []
 
 viewButton = ->
   if $('body').data('logged-in') == true
@@ -11,12 +11,12 @@ viewButton = ->
       e.preventDefault()
       path   = $(this).closest('.gift-idea').find('.img-container').data('path')
       idThis = $(this).closest('.gift-idea').data('id')
-      window.lastClickedId = [idThis]
+      lastClickedId = [idThis]
       loadShowWishExternal(path,idThis)
 
-window.loadShowWishExternal = (path,idThis,fromSuggestions) ->
+loadShowWishExternal = (path,idThis,fromSuggestions) ->
   if !fromSuggestions
-    window.lastClickedId = [idThis]
+    lastClickedId = [idThis]
   showLoading()
   container = '<div class="showOverlay showWish squeeze"></div>'
   $(container).insertAfter('.mobileWrapp')
